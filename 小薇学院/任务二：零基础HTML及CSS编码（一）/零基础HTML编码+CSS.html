@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        零基础HTML编码
+    </title>
+    </meta>
+    <style type="text/css" media="screen">
+    * {
+        margin: 0;
+        padding: 0
+    }
+
+    body {
+        background-color: #DEDEDE;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        line-height: 30px;
+    }
+
+    header {
+        background: #333;
+        height: 70px;
+        width: 100%;
+    }
+
+    header .logo {
+        width: 120px;
+        height: 40px;
+        float: left;
+        margin: 10px 40px;
+    }
+
+    nav ul {
+        float: right;
+        height: 70px;
+        line-height: 70px;
+    }
+
+    nav li {
+        float: left;
+        margin-right: 30px;
+    }
+
+    nav li a {
+        color: white;
+    }
+
+    nav li:last-child a {
+        color: #666;
+    }
+
+    .clearfix {
+        content: "";
+        display: table;
+        overflow: hidden;
+        clear: both;
+    }
+
+    .clearfix:after,
+    .clearfix:after {
+        *zoom: 1;
+    }
+    /*主体部分*/
+
+    section,
+    aside {
+        margin: 20px;
+        padding: 20px;
+        background: white;
+    }
+    /*footer部分*/
+
+    footer {
+        height: 70px;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        line-height: 70px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    h1 {
+        padding-top: 20px;
+    }
+
+    h2 {
+        padding-top: 10px;
+        color: #63676E;
+    }
+
+    .time {
+        padding-top: 10px;
+        color: #63676E;
+    }
+    /*首行缩进*/
+
+    section:not(:last-child) p:not(:nth-of-type(1)) {
+        /*section:not(:last-child)  p:not([attribute~=time]) {*/
+        /* 另一种选择器 */
+        text-indent: 2em;
+    }
+
+    .time {
+        text-indent: 0;
+    }
+
+    section:nth-of-type(2) li {
+        list-style: none;
+        margin-left: 20px;
+        line-height: 30px;
+    }
+    /*图片区域*/
+
+    figure {
+        width: 170px;
+        margin: 20px 40px;
+        border: 1px solid #ccc;
+    }
+
+    figcaption {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    figure img {
+        padding: 10px;
+    }
+
+    ol {
+        margin-left: 50px;
+    }
+    /*表格部分*/
+
+    table {
+        width: 100%;
+        text-indent: .4em;
+    }
+
+    table thead {
+        background-color: #333;
+        text-align: left;
+        color: white;
+    }
+    /*表单部分*/
+
+    aside h1 {
+        border-left: 4px solid #ccc;
+        padding-left: 10px;
+    }
+
+    form {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .formgroup{
+    	padding: 10px 0; 
+    }
+	.formgroup label:first-child{
+		display: inline-block;
+		width: 200px;
+		text-align: right;
+	}
+
+	.formgroup p{
+		color: #ccc;
+		margin-left: 200px
+	}
+
+	textarea{
+		vertical-align:top;
+	}
+
+	/*提交按钮*/
+	input[type="submit"]{
+		width: 200%;
+		margin-left: -50%;
+		background-color: #0066CC;
+		color: white;
+		border-radius: 10px;
+		line-height: 40px;
+	}
+    </style>
+</head>
+
+<body>
+    <header class="clearfix">
+        <nav>
+            <img class="logo" src="./baidu-logo.jpg" alt="logo">
+            <ul>
+                <li><a href="#">导航链接一</a></li>
+                <li><a href="#">导航链接二</a></li>
+                <li><a href="#">导航链接三</a></li>
+                <li><a href="#">导航链接四</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- <h1>网站一级标题</h1> -->
+        <section>
+            <h1>文章一级标题</h1>
+            <h2>文章二级标题</h2>
+            <p class="time">文章作者&nbsp;文章发表时间</p>
+            <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                <br/> 换行了
+                <br/> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                <a href="#">这里有一个链接链接到http://ife.baidu.com</a> 这是一个很长很长的段落，这是一个很长很长的段落，
+                <strong>这里有个粗体字</strong> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+            </p>
+            <img alt="图片" src="./1.png"></img>
+            <p>
+                这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+                <br/> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                <strong>这里有个粗体字</strong> 这是一个很长很长的段落，这是一个很长很长的段落，
+                <a href="#" target="_blank">这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+        </section>
+        <section>
+            <h1>另一篇文章一级标题</h1>
+            <h2>文章二级标题</h2>
+            <p class="time">文章作者&nbsp;文章发表时间</p>
+            <p>
+                这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+                <br/> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+                <br/> 这是一个很长很长的段落，这是一个很长很长的段落，
+                <a href="#">这里有一个链接链接到http://ife.baidu.com</a> 这是一个很长很长的段落，这是一个很长很长的段落，
+                <strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+            </p>
+            <img src="1.png" alt="图片">
+            <ul>
+                <li>项目列表一</li>
+                <li>项目列表二</li>
+                <li>项目列表三</li>
+                <li>项目列表四</li>
+            </ul>
+        </section>
+        <section>
+            <h1>图片</h1>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="1.png" alt="图片">
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="1.png" alt="图片">
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="1.png" alt="图片">
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="1.png" alt="图片">
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="1.png" alt="图片">
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="1.png" alt="图片">
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="1.png" alt="图片">
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="1.png" alt="图片">
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="1.png" alt="图片">
+            </figure>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="1.png" alt="图片">
+            </figure>
+        </section>
+        <section>
+            <h1>最后一篇文章一级标题</h1>
+            <h2>文章二级标题</h2>
+            <p class="time">文章作者&nbsp;文章发表时间</p>
+            <ol>
+                <li>排名1</li>
+                <li>排名2</li>
+                <li>排名3</li>
+            </ol>
+            <p>下面是一个表格，给表格加了一个border="1"好让你看出来是一个表格</p>
+            <table border="1" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th>表头</th>
+                        <th>表头</th>
+                        <th>表头</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tfoot>
+                        <td>总计</td>
+                        <td colspan="2">1000</td>
+                    </tfoot>
+                </tbody>
+            </table>
+        </section>
+        <aside>
+            <h1>这里以后是一个侧栏，这是侧栏的标题</h1>
+            <!-- <h2>侧栏注册窗口标题</h2> -->
+            <form action="#">
+                <div class="formgroup">
+                    <label for="email">请输入邮箱地址：</label>
+                    <input type="email" id="email" placeholder="这是一个文本输入框" name="email">
+                    <p>邮箱地址请按要求格式输入</p>
+                </div>
+                <div class="formgroup">
+                    <label for="pwd1">请输入密码：</label>
+                    <input type="password" id="pwd1" placeholder="这是一个文本输入框" name="pwd1">
+                </div>
+                <div class="formgroup">
+                    <label for="pwd2">请重复输入密码：</label>
+                    <input type="password" id="pwd2" placeholder="这是一个文本输入框" name="pwd2">
+                    <p>密码请为6~16位英文</p>
+                </div>
+                <div class="formgroup">
+                    <label for="#">性别：</label>
+                    <input type="radio" id="male" name="sex" checked="checked">
+                    <label for="male">男</label>
+                    <input type="radio" id="female" name="sex">
+                    <label for="female">女</label>
+                </div>
+                <div class="formgroup">
+                    <label for="city">城市：</label>
+                    <select name="city" id="city">
+                        <option value="caption" selected>北京</option>
+                        <option value="other">南京</option>
+                    </select>
+                </div>
+                <div class="formgroup">
+                    <label for="">爱好：</label>
+                    <input type="checkbox" id="hobby1" name="hobby1">
+                    <label for="hobby1">运动</label>
+                    <input type="checkbox" id="hobby2">
+                    <label for="hobby2">爱好</label>
+                    <input type="checkbox" id="hobby3">
+                    <label for="hobby3">科学</label>
+                </div>
+                <div class="formgroup">
+                    <label for="attr">个人描述：</label>
+                    <textarea name="" id="" cols="50" rows="6" placeholder="这是一个多行文本，请输入个人描述"></textarea>
+                </div>
+                <input type="submit" value="确认提交">
+            </form>
+        </aside>
+    </div>
+    <footer>
+        <span>版权所有&copy;</span>
+    </footer>
+</body>
+
+</html>
